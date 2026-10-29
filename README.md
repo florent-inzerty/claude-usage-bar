@@ -28,3 +28,14 @@ Dans l'app desktop, où `/plugin` ne tourne pas : clic sur **+** à côté de la
 **Plugins**, **Add marketplace** avec `florent-inzerty/claude-usage-bar`, puis **Add plugin**.
 
 Installé au scope *user*, le mod se charge dans toutes les sessions démarrées ensuite.
+
+## Mise à jour
+
+Un plugin ne voit les nouvelles versions qu'après le rafraîchissement de sa marketplace. Dans un shell, dans cet ordre :
+
+```
+claude plugin marketplace update usage-bar
+claude plugin update usage-bar@usage-bar
+```
+
+Relancer ensuite la session : la nouvelle version ne se charge qu'au démarrage.
