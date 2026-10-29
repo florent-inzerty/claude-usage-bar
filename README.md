@@ -6,7 +6,7 @@ Bande colorée au-dessus de la zone de saisie de Claude Code (app desktop ; devr
 
 - **ctx** : remplissage du contexte (tokens utilisés / taille de la fenêtre, en %) ;
 - **$** : coût de la session ;
-- **5h** : part de la limite de 5 heures consommée, temps avant reset (↻), et le rythme :
+- **5h** : part de la limite de 5 heures consommée, temps avant reset, et le rythme :
   `▲ marge +8%` (vert) = tu consommes moins vite que le temps qui passe, tu peux accélérer ;
   `▼ trop vite -10%` (rouge) = tu vas atteindre la limite avant la fin de la fenêtre, ralentis.
 

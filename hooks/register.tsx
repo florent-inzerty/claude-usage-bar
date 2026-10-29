@@ -65,7 +65,7 @@ export const register: Register = on => {
           <Text bold>{w.label}</Text>
           <Text><Text color={tone(r.pct)}>{b.on}</Text><Text dimColor>{b.off}</Text></Text>
           <Text bold color={tone(r.pct)}>{r.pct}%</Text>
-          {left != null && <Text dimColor>↻{dur(left)}</Text>}
+          {left != null && <Text dimColor>reset {dur(left)}</Text>}
           {delta != null && (
             <Text bold color={delta >= 0 ? 'success' : 'error'}>
               {delta >= 0 ? `▲ marge +${delta}%` : `▼ trop vite ${delta}%`}
