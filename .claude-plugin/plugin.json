@@ -1,6 +1,6 @@
 {
   "name": "usage-bar",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Colored band above the prompt: context, cost, 5h/7d limits and pace delta",
   "types": "./types/index.d.ts",
   "license": "MIT",
