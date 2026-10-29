@@ -37,16 +37,17 @@ export const register: Register = on => {
     const cells: any[] = []
     const sep = (i: string) => <Text key={i} dimColor>│</Text>
 
-    if (snap.tokens != null) {
-      const p = snap.percent ?? 0
+    {
+      const known = snap.tokens != null || snap.percent != null
+      const p = snap.percent ?? (snap.tokens != null ? Math.round((snap.tokens / snap.window) * 100) : 0)
       const b = bar(p)
       cells.push(
         <Box key="ctx" gap={1}>
           <Text dimColor>ctx</Text>
           <Text color={tone(p)}>{b.on}</Text>
           <Text dimColor>{b.off}</Text>
-          <Text bold>{k(snap.tokens)}</Text>
-          <Text dimColor>/{k(snap.window)} ({p}%)</Text>
+          {snap.tokens != null && <Text bold>{k(snap.tokens)}</Text>}
+          <Text dimColor>{known ? `/${k(snap.window)} (${p}%)` : `— /${k(snap.window)}`}</Text>
         </Box>
       )
     }
