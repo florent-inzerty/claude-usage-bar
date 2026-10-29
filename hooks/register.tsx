@@ -44,8 +44,7 @@ export const register: Register = on => {
       cells.push(
         <Box key="ctx" gap={1}>
           <Text dimColor>ctx</Text>
-          <Text color={tone(p)}>{b.on}</Text>
-          <Text dimColor>{b.off}</Text>
+          <Text><Text color={tone(p)}>{b.on}</Text><Text dimColor>{b.off}</Text></Text>
           {snap.tokens != null && <Text bold>{k(snap.tokens)}</Text>}
           <Text dimColor>{known ? `/${k(snap.window)} (${p}%)` : `— /${k(snap.window)}`}</Text>
         </Box>
@@ -64,8 +63,7 @@ export const register: Register = on => {
         sep('s' + r.kind),
         <Box key={r.kind} gap={1}>
           <Text bold>{w.label}</Text>
-          <Text color={tone(r.pct)}>{b.on}</Text>
-          <Text dimColor>{b.off}</Text>
+          <Text><Text color={tone(r.pct)}>{b.on}</Text><Text dimColor>{b.off}</Text></Text>
           <Text bold color={tone(r.pct)}>{r.pct}%</Text>
           {left != null && <Text dimColor>↻{dur(left)}</Text>}
           {delta != null && (
