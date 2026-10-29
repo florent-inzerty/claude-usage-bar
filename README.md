@@ -1,5 +1,7 @@
 # usage-bar
 
+![Aperçu de la bande usage-bar](docs/screenshot.png)
+
 Bande colorée au-dessus de la zone de saisie de Claude Code (app desktop) qui affiche en direct :
 
 - **ctx** : remplissage du contexte (tokens utilisés / taille de la fenêtre, en %) ;
