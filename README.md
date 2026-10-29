@@ -2,7 +2,7 @@
 
 ![Aperçu de la bande usage-bar](docs/screenshot.png)
 
-Bande colorée au-dessus de la zone de saisie de Claude Code (app desktop) qui affiche en direct :
+Bande colorée au-dessus de la zone de saisie de Claude Code (app desktop ; devrait aussi fonctionner dans le terminal, non testé) qui affiche en direct :
 
 - **ctx** : remplissage du contexte (tokens utilisés / taille de la fenêtre, en %) ;
 - **$** : coût de la session ;
@@ -26,8 +26,5 @@ ou depuis un shell : `claude plugin install usage-bar --marketplace florent-inze
 
 Dans l'app desktop, où `/plugin` ne tourne pas : clic sur **+** à côté de la zone de saisie,
 **Plugins**, **Add marketplace** avec `florent-inzerty/claude-usage-bar`, puis **Add plugin**.
-
-Dépôt privé : il faut avoir accès au dépôt sur GitHub et un identifiant git pour github.com
-(clé SSH, ou `gh auth login` puis `gh auth setup-git`).
 
 Installé au scope *user*, le mod se charge dans toutes les sessions démarrées ensuite.
